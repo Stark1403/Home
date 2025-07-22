@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentsViewController" customModule="ZeusAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyLabel" destination="axO-2Q-RbK" id="0QU-FX-rz7"/>
+                <outlet property="cancelButton" destination="3GX-0x-ebt" id="aZV-FW-cDj"/>
+                <outlet property="closeButton" destination="hy9-gS-dSK" id="i84-yC-rAw"/>
+                <outlet property="containerView" destination="iHR-UD-mMS" id="OtT-PE-ljh"/>
+                <outlet property="continueButton" destination="0WC-CJ-AEt" id="fzG-Oa-3yp"/>
+                <outlet property="headerTitleLabel" destination="MUI-Ii-YIB" id="LhA-yD-qMH"/>
+                <outlet property="heightValue" destination="Pbb-lg-6ib" id="0Dw-e7-ukX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHR-UD-mMS">
+                    <rect key="frame" x="0.0" y="352" width="393" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Cambios en el Aviso de Privacidad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUI-Ii-YIB">
+                            <rect key="frame" x="16" y="15.999999999999998" width="313" height="23.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy9-gS-dSK">
+                            <rect key="frame" x="345" y="24" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="9bt-f0-0VB"/>
+                                <constraint firstAttribute="width" constant="32" id="PPi-WH-sfg"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="closed_button_comunicados"/>
+                            <connections>
+                                <action selector="closeView:" destination="-1" eventType="touchUpInside" id="w0p-EI-hgY"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2HY-9R-MpB">
+                            <rect key="frame" x="12" y="441" width="369" height="29"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-0x-ebt" customClass="ZDSButtonAlt" customModule="ZeusCoreDesignSystem">
+                                    <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="29"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Declinar">
+                                        <color key="titleColor" name="btn-YellowFilter"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WC-CJ-AEt" customClass="ZDSButtonAlt" customModule="ZeusCoreDesignSystem">
+                                    <rect key="frame" x="196.66666666666663" y="0.0" width="172.33333333333337" height="29"/>
+                                    <color key="backgroundColor" name="btn-YellowFilter"/>
+                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Continuar"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="axO-2Q-RbK">
+                            <rect key="frame" x="24" y="51.333333333333314" width="345" height="133.66666666666666"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <string key="text">Hemos modificado nuestro aviso de privacidad. Recuerda que debes aceptarlo para seguir usando el servicio. Puedes consultarlo dando clic en Aviso de privacidad.
+
+Al continuar estás aceptando las modificaciones.</string>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="MUI-Ii-YIB" firstAttribute="top" secondItem="iHR-UD-mMS" secondAttribute="top" constant="16" id="3C2-vM-r7p"/>
+                        <constraint firstAttribute="trailing" secondItem="hy9-gS-dSK" secondAttribute="trailing" constant="16" id="BgF-Ng-UWv"/>
+                        <constraint firstItem="hy9-gS-dSK" firstAttribute="top" secondItem="iHR-UD-mMS" secondAttribute="top" constant="24" id="Izj-X0-wpi"/>
+                        <constraint firstAttribute="height" constant="500" id="Pbb-lg-6ib"/>
+                        <constraint firstItem="axO-2Q-RbK" firstAttribute="top" secondItem="MUI-Ii-YIB" secondAttribute="bottom" constant="12" id="QAm-kE-RDf"/>
+                        <constraint firstItem="2HY-9R-MpB" firstAttribute="leading" secondItem="iHR-UD-mMS" secondAttribute="leading" constant="12" id="SY6-sw-o2V"/>
+                        <constraint firstItem="hy9-gS-dSK" firstAttribute="leading" secondItem="MUI-Ii-YIB" secondAttribute="trailing" constant="16" id="Un2-my-g4s"/>
+                        <constraint firstAttribute="trailing" secondItem="axO-2Q-RbK" secondAttribute="trailing" constant="24" id="V81-rm-GdT"/>
+                        <constraint firstAttribute="trailing" secondItem="2HY-9R-MpB" secondAttribute="trailing" constant="12" id="VfX-ok-Kyj"/>
+                        <constraint firstAttribute="bottom" secondItem="2HY-9R-MpB" secondAttribute="bottom" constant="30" id="X1e-JE-G8A"/>
+                        <constraint firstItem="MUI-Ii-YIB" firstAttribute="leading" secondItem="iHR-UD-mMS" secondAttribute="leading" constant="16" id="YFQ-7f-dgQ"/>
+                        <constraint firstItem="axO-2Q-RbK" firstAttribute="leading" secondItem="iHR-UD-mMS" secondAttribute="leading" constant="24" id="pNO-6d-0q0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33000000000000002" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iHR-UD-mMS" secondAttribute="bottom" id="Whr-35-smR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iHR-UD-mMS" secondAttribute="trailing" id="hts-rw-Nos"/>
+                <constraint firstItem="iHR-UD-mMS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="our-xC-Nvk"/>
+            </constraints>
+            <point key="canvasLocation" x="127.48091603053435" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closed_button_comunicados" width="38" height="38"/>
+        <namedColor name="btn-YellowFilter">
+            <color red="1" green="0.73725490196078436" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

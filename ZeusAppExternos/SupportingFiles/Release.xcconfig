@@ -1,0 +1,41 @@
+//
+//  ReleaseConfig.xcconfig
+//  ZeusAppExternos
+//
+//  Created by Jesus Rivera on 23/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+ZEUS_APP_NAME = ZeusAPP
+ZEUS_APP_VERSION = $(inherited).1
+
+// MARK: - Environment and base URLS
+ZEUS_API_BASE_URL = https:\/\/api.talentozeus.com
+ZEUS_API_COLLABORATOR_BASE_URL = https:\/\/api-colaborador.talentozeus.com
+ZEUS_BUCKET = prod.zeus.files.app
+ZEUSBOX_BUCKET_URL = https:\/\/files.talentozeus.com
+ZEUS_APP_OKTA = https:\/\/ios.okta.talentozeus.com
+ZEUS_API_COMMUNICATION_BASE_URL = https:\/\/api-comunicacion.talentozeus.com
+ZEUS_API_DOCUMENT_MANAGER_BASE_URL = https:\/\/api-documentos.talentozeus.com.mx
+ZEUS_API_COMPANY_BASE_URL  = https:\/\/api-empresa.talentozeus.com.mx
+ZEUS_AMPLIFY_BUCKET_BASE_URL = https:\/\/apps.talentozeus.com
+
+// Firebase
+// MARK: - Zeus App Firebase options
+//ZEUS_APP_CLIENT_ID                 = 445168811485-6nb9plushd05kmka8urg5bslkm8on95m.apps.googleusercontent.com
+ZEUS_APP_API_KEY                   = AIzaSyASLtVrUYrwty-uOMq7EnZZUl_MRNcNgQk
+ZEUS_APP_GCM_SENDER_ID             = 836760819489
+ZEUS_APP_BUNDLE_ID                 = com.upax.zeus
+ZEUS_APP_PROJECT_ID                = zeus-externos-prod
+ZEUS_APP_STORAGE_BUCKET            = zeus-externos-prod.appspot.com
+ZEUS_APP_GOOGLE_APP_ID             = 1:836760819489:ios:00aa9dc795a89b58c89060
+ZEUS_APP_DATABASE_URL              = https:\/\/zeus-externos-prod.firebaseio.com
+
+// Networking V2
+ZEUS_APP_UNAUTHENTICATED_KEY       = MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3L5vkeFIUWsx+/p2N/3EUpgHvZn0n90Cn21M0jCmhGitpTBChlEqlWG77qQvA7PgGMTpbcJF/rQPv3IFZQCrVLQbgE7afUP7oeSGceiIcTzDLlhp1xH96l1u2iSpf7Bf1LEXvV52RcQHyBKRYrrQPN/J6Msh56HRGXaY19/wwR0pw94gFwf2TRwf4ARlrfFxREVlpKzwkvd7hfy9YgW/K1UKmC+1Uo72g7C+rsXUus0NnPdTCvWW50rP2YRcFbIj4ZnJacsyZ93yVHGtlaAr\/\/X5u+IZIfmhW7KIxWo0Osh7jnY26b9cwuh8+W/y/gvB4Pi7MdtAy13scV1JOFgXKwIDAQAB
+
+// Amplify
+AMPLIFY_FILENAME = amplifyconfiguration-prod

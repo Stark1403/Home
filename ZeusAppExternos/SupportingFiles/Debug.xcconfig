@@ -1,0 +1,41 @@
+//
+//  Debug.xcconfig
+//  ZeusAppExternos
+//
+//  Created by Jesus Rivera on 23/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+ZEUS_APP_NAME = ZeusAPPDebug
+ZEUS_APP_VERSION = $(inherited).3
+
+// MARK: - Environment and base URLS
+ZEUS_API_BASE_URL = https:\/\/api.talentozeus-dev.com.mx
+ZEUS_API_COLLABORATOR_BASE_URL = https:\/\/api-colaborador.talentozeus-dev.com.mx
+ZEUS_BUCKET = dev.zeus.files.app
+ZEUSBOX_BUCKET_URL = https:\/\/files.talentozeus-dev.com.mx
+ZEUS_APP_OKTA = https:\/\/ios.okta.talentozeus-dev.com.mx
+ZEUS_API_COMMUNICATION_BASE_URL = https:\/\/api-comunicacion.talentozeus-dev.com.mx
+ZEUS_API_DOCUMENT_MANAGER_BASE_URL = https:\/\/api-documentos.talentozeus-dev.com.mx
+ZEUS_API_COMPANY_BASE_URL  = https:\/\/api-empresa.talentozeus-dev.com.mx
+ZEUS_AMPLIFY_BUCKET_BASE_URL = https:\/\/apps.talentozeus-dev.com.mx
+
+// Firebase
+// MARK: - Zeus App Firebase options
+//ZEUS_APP_CLIENT_ID                 = 445168811485-6nb9plushd05kmka8urg5bslkm8on95m.apps.googleusercontent.com
+ZEUS_APP_API_KEY                   = AIzaSyC3X7k9cn5PwVF9pgCH5UyZJCJrZMnkkcI
+ZEUS_APP_GCM_SENDER_ID             = 445168811485
+ZEUS_APP_BUNDLE_ID                 = com.upax.zeus.dev
+ZEUS_APP_PROJECT_ID                = zeus-externos-dev
+ZEUS_APP_STORAGE_BUCKET            = zeus-externos-dev.appspot.com
+ZEUS_APP_GOOGLE_APP_ID             = 1:445168811485:ios:525d65b91899837d254a34
+ZEUS_APP_DATABASE_URL              = https:\/\/zeus-externos-dev.firebaseio.com
+
+// Networking V2
+ZEUS_APP_UNAUTHENTICATED_KEY       = MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0QAd4NVUBTCVvCRNrU+4a7LO/0WgB8/r1MZ7T27hupyZQR76Wjd8sX4x6o2pcThEBAqneBhgUW/077JMCl8sKH4CssRPpZf44uBCcamOoLPLEQtWcNDoIKItpv9/ghjROqMx+zkBttRluCKU2CtD6j1p6WQ7pf31KdtKUQrjMZgwN7iaCv5Sm71TgzDJ8rMdKK0hI8NdWHVUNkItM1xpC69tBYjtJRKLs7D1fnHepIb3+hqVjD3Vr4lJT5cjXgAEORgLwgMc3D3gPeq8MqeI5gf77GDj1qk5yTIaRI43sOxVIaLrK05K5YVrkhASZIFFOFKtToizOnuEY3wy6rTkLwIDAQAB
+
+// Amplify
+AMPLIFY_FILENAME = amplifyconfiguration-dev

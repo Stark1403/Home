@@ -1,0 +1,41 @@
+//
+//  Qa.xcconfig
+//  ZeusAppExternos
+//
+//  Created by Jesus Rivera on 23/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+ZEUS_APP_NAME = ZeusAPPQA
+ZEUS_APP_VERSION = $(inherited).2
+
+// MARK: - Environment and base URLS
+ZEUS_API_BASE_URL = https:\/\/api.talentozeus-qa.com.mx
+ZEUS_API_COLLABORATOR_BASE_URL = https:\/\/api-colaborador.talentozeus-qa.com.mx
+ZEUS_BUCKET = qa.zeus.files.app
+ZEUSBOX_BUCKET_URL = https:\/\/files.talentozeus-qa.com.mx
+ZEUS_APP_OKTA = https:\/\/ios.okta.talentozeus-dev.com.mx
+ZEUS_API_COMMUNICATION_BASE_URL = https:\/\/api-comunicacion.talentozeus-qa.com.mx
+ZEUS_API_DOCUMENT_MANAGER_BASE_URL = https:\/\/api-documentos.talentozeus-qa.com.mx
+ZEUS_API_COMPANY_BASE_URL  = https:\/\/api-empresa.talentozeus-qa.com.mx
+ZEUS_AMPLIFY_BUCKET_BASE_URL = https:\/\/apps.talentozeus-qa.com.mx
+
+// Firebase
+// MARK: - Zeus App Firebase options
+//ZEUS_APP_CLIENT_ID                 = 1011340772543-qote3f6thusd6e1bd0l0m34suh8pmipc.apps.googleusercontent.com
+ZEUS_APP_API_KEY                   = AIzaSyDFkQF4uHOmqTpD6zEXY1gMLkomWUh1_F8
+ZEUS_APP_GCM_SENDER_ID             = 1011340772543
+ZEUS_APP_BUNDLE_ID                 = com.upax.zeus.qa
+ZEUS_APP_PROJECT_ID                = zeus-externos-qa
+ZEUS_APP_STORAGE_BUCKET            = zeus-externos-qa.appspot.com
+ZEUS_APP_GOOGLE_APP_ID             = 1:1011340772543:ios:3565d31ce0fa4a45c6f20a
+ZEUS_APP_DATABASE_URL              = https:\/\/zeus-externos-qa.firebaseio.com
+
+// Networking V2
+ZEUS_APP_UNAUTHENTICATED_KEY       = MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmtAJGYDg28kpVMR5uEWtgoRoKOBQCkumlyed1qV0X/vQHDvCRXmAU6OCTigLlAa4JpaYMHX2QjUUotWKGMDGHJ/ud4gLVeyPDNWXGC5LDt/MXyBi/5ZuxhWlonbkNySPBfEVKLHh1Ku5HDFQRFKBpFptcEDVBwsP/GMqh+oVVWRo3s72vKU0HKQ3QYq6ylVIAdK9lOSA3IA8Hz70rE5opgfPOGB0ZkEtBnXfabX7hRerf3k/WpwslBen7xpoLUCzU6zkAHmzN9r7NH32ctBHhnNqFMdib44CL1IHAhJk0zB/BgYexHHNrSFxE4wRbihEcS6g260A4spCXeqFK/beEwIDAQAB
+
+// Amplify
+AMPLIFY_FILENAME = amplifyconfiguration-qa

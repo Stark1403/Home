@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TypeSerieParallax" customModule="LocationEKT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aLy-aX-SdF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kD7-ck-WH9">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uak-dz-7lY">
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Estándar">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnTypeSerie:" destination="iN0-l3-epB" eventType="touchUpInside" id="CCU-Bw-wn8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Uak-dz-7lY" firstAttribute="centerY" secondItem="kD7-ck-WH9" secondAttribute="centerY" id="2NB-7Y-Q2Z"/>
+                                <constraint firstItem="Uak-dz-7lY" firstAttribute="width" secondItem="kD7-ck-WH9" secondAttribute="width" id="9W1-Zb-qOS"/>
+                                <constraint firstItem="Uak-dz-7lY" firstAttribute="centerX" secondItem="kD7-ck-WH9" secondAttribute="centerX" id="hOQ-zk-bpe"/>
+                                <constraint firstItem="Uak-dz-7lY" firstAttribute="height" secondItem="kD7-ck-WH9" secondAttribute="height" id="quM-v4-eia"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6N-2k-EcI">
+                            <rect key="frame" x="138" y="0.0" width="138" height="100"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-ro-yqi">
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Fibonacci">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnTypeSerie:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wq1-X4-VEB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="ffG-ro-yqi" firstAttribute="centerY" secondItem="M6N-2k-EcI" secondAttribute="centerY" id="Dku-6g-2wM"/>
+                                <constraint firstItem="ffG-ro-yqi" firstAttribute="height" secondItem="M6N-2k-EcI" secondAttribute="height" id="KG1-hh-6Rd"/>
+                                <constraint firstItem="ffG-ro-yqi" firstAttribute="centerX" secondItem="M6N-2k-EcI" secondAttribute="centerX" id="SUd-Zr-eoE"/>
+                                <constraint firstItem="ffG-ro-yqi" firstAttribute="width" secondItem="M6N-2k-EcI" secondAttribute="width" id="zA0-iB-xix"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQL-Sm-gZy">
+                            <rect key="frame" x="276" y="0.0" width="138" height="100"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-i1-PtP">
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Natural">
+                                        <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnTypeSerie:" destination="iN0-l3-epB" eventType="touchUpInside" id="9ID-ql-gxo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Qdo-i1-PtP" firstAttribute="centerY" secondItem="OQL-Sm-gZy" secondAttribute="centerY" id="0jH-d8-sn2"/>
+                                <constraint firstItem="Qdo-i1-PtP" firstAttribute="height" secondItem="OQL-Sm-gZy" secondAttribute="height" id="7jj-Br-jGU"/>
+                                <constraint firstItem="Qdo-i1-PtP" firstAttribute="centerX" secondItem="OQL-Sm-gZy" secondAttribute="centerX" id="OKZ-SH-4Bd"/>
+                                <constraint firstItem="Qdo-i1-PtP" firstAttribute="width" secondItem="OQL-Sm-gZy" secondAttribute="width" id="lMP-S5-gsD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-Nj-Msw">
+                    <rect key="frame" x="0.0" y="100" width="138" height="2"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="TPg-iC-SP7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aLy-aX-SdF" secondAttribute="bottom" constant="2" id="25I-cg-2Z4"/>
+                <constraint firstItem="3s9-Nj-Msw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.333" id="Npv-zn-lyn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="aLy-aX-SdF" secondAttribute="top" id="VJ5-46-ggF"/>
+                <constraint firstItem="3s9-Nj-Msw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hTs-TD-hPE"/>
+                <constraint firstItem="aLy-aX-SdF" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="hnR-aG-nKm"/>
+                <constraint firstItem="3s9-Nj-Msw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="yAe-y2-Xv1"/>
+                <constraint firstItem="aLy-aX-SdF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ys7-1q-ha0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cstLeadingIndicator" destination="hTs-TD-hPE" id="GCx-4X-9Sb"/>
+                <outlet property="indicatorView" destination="3s9-Nj-Msw" id="t8n-sj-hYR"/>
+                <outletCollection property="seriesButtons" destination="Uak-dz-7lY" collectionClass="NSMutableArray" id="g6N-Vl-dzZ"/>
+                <outletCollection property="seriesButtons" destination="ffG-ro-yqi" collectionClass="NSMutableArray" id="eyf-jU-Z9p"/>
+                <outletCollection property="seriesButtons" destination="Qdo-i1-PtP" collectionClass="NSMutableArray" id="h6K-Gs-5tf"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="471.19565217391306"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,17 @@
+//
+//  Base.xcconfig
+//  ZeusAppExternos
+//
+//  Created by Jesus Rivera on 30/05/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ZEUS_APP_VERSION = 0
+ZEUS_APP_BUNDLE_ID = com.upaxer
+
+// MARK: - Zeus Intercom
+ZEUS_APP_INTERCOM_APP_ID           = vq6agu05
+ZEUS_APP_INTERCOM_KEY              = ios_sdk-6e5b9085ce3fbbcf9f96bb68c70d164dd30ddf07
+ZEUS_PRIVATE = Z3us3ncryPtEd.K3Y.Z3us3ncryPtEd+

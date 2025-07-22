@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gzm-6m-1Td">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="pYG-Le-KCK">
+            <objects>
+                <navigationController id="Gzm-6m-1Td" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Hk-uk-55p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IKV-U3-Du0" kind="relationship" relationship="rootViewController" id="KBL-zB-HEe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4G-aJ-5Qf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-179" y="215"/>
+        </scene>
+        <!--Poker Series View Controller-->
+        <scene sceneID="K9u-9W-yqD">
+            <objects>
+                <viewController storyboardIdentifier="planningPokerRootVC" id="IKV-U3-Du0" customClass="PokerSeriesViewController" customModule="ZeusInvitado" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4UW-Ua-fbS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-rw-NWK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="62"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="fwa-d5-9yp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xck-j1-XaV"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5eF-rw-NWK" firstAttribute="centerX" secondItem="Xck-j1-XaV" secondAttribute="centerX" id="N5h-g4-QaP"/>
+                            <constraint firstItem="5eF-rw-NWK" firstAttribute="top" secondItem="Xck-j1-XaV" secondAttribute="top" id="fBO-UE-Zqq"/>
+                            <constraint firstItem="5eF-rw-NWK" firstAttribute="width" secondItem="4UW-Ua-fbS" secondAttribute="width" id="tTr-YK-7A5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4yM-oc-5gX"/>
+                    <connections>
+                        <outlet property="viewForHeader" destination="5eF-rw-NWK" id="jOg-Tt-Y3j"/>
+                        <segue destination="VvO-OS-OkB" kind="show" identifier="detailSelectedSegue" id="Pzz-C5-AIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2p-nS-H4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848" y="215"/>
+        </scene>
+        <!--Detail Selected View Controller-->
+        <scene sceneID="N6U-Dt-51E">
+            <objects>
+                <viewController id="VvO-OS-OkB" customClass="DetailSelectedViewController" customModule="ZeusInvitado" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPu-5j-mMi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpy-U2-BqX">
+                                <rect key="frame" x="41.5" y="228.5" width="331" height="493"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zpy-U2-BqX" secondAttribute="height" multiplier="331:493" id="Nfd-Hh-0jZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k9c-5D-qPq"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zpy-U2-BqX" firstAttribute="height" secondItem="OPu-5j-mMi" secondAttribute="height" multiplier="0.55" id="C5t-7p-yJo"/>
+                            <constraint firstItem="Zpy-U2-BqX" firstAttribute="centerX" secondItem="k9c-5D-qPq" secondAttribute="centerX" id="WBT-Zi-cpS"/>
+                            <constraint firstItem="Zpy-U2-BqX" firstAttribute="centerY" secondItem="k9c-5D-qPq" secondAttribute="centerY" id="Y64-e9-bBT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XRC-j9-lUo"/>
+                    <connections>
+                        <outlet property="flipContainerView" destination="Zpy-U2-BqX" id="xvq-r3-Hgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfb-tk-iOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
